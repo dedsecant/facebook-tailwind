@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Facebook - log in or sign up</title>
+</head>
+<body class="bg-gray-100">
+    <!-- first plan the layout for your document : so idea is left and right, left - image , right - content-->
+    <!-- make it raw -->
+    <!-- flex cause i make it in a row, as in the original one -->
+    <div class="container mt-48 flex mx-auto items-center justify-center">      
+        <div class="left w-1/3 mx-14">
+            <img src="fb.svg" class="w-80" alt="">
+            <p class="text-3xl mx-8">Facebook helps you connect and share with the people in your life.</p>
+        </div>
+
+        <!-- basically a box containing input tag , a button  , a span, a hr, another button -->
+        <!-- flex - input thingee and button in same row -->
+        <!-- flex-col to arrange in column wise -->
+        <div class="right shadow-2xl flex flex-col bg-white p-9 rounded-xl w-1/4 text-lg relative">
+            <input class="px-4 h-12 my-3 border border-1 border-gray-100 rounded-lg outline-blue-400" type="text" placeholder="Email address or phone number" id="">
+            <input class="px-4 h-12 my-3 border border-1 border-gray-100 rounded-lg outline-blue-400" type="password" placeholder="Password" id="">
+            <button class="btn bg-blue-600 hover:bg-blue-700 text-white my-3 py-3 rounded-md  font-bold">Log In</button>
+            <span class="text-blue-600 text-center text-sm my-3 cursor-pointer hover:underline">Forgotten password?</span>
+            <hr class="my-3">
+            <button class="btn  bg-green-600 hover:bg-green-700 text-white my-3 py-3 rounded-md  font-bold w-fit px-4 mx-auto">Create New Account</button>
+            <!-- below this something is there we ll see it later -->
+            <!-- ok making it now  -->
+            <span class="absolute -bottom-12 text-sm"><span class="font-bold hover:underline cursor-pointer">Create a Page</span> for a celebrity, brand or business.</span>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- start from left box -->
+<!-- after putting required flex, we need to bring the content to centre so mx-auto  -->
+<!-- bg-grey for class in body -->
+<!-- for class in right do bg-white  -->
+<!-- text and margins for the p tag about facebook helps u connect dadadad -->
+<!-- padding for the right box of p-9 now its aligned -->
+<!-- next to properly get left and right to center so flex box of container to item center and justify center  -->
+<!-- some margins after the image between box and left  -->
+<!-- working on right box-->
+<!-- make it rounded  -->
+<!-- now if you observer i can t read email and phone number properly in the input  so we need padding and margins and height within it -->
+<!-- in input tag when i give px-4 so before the placeholder text , email address or phone number i get some padding  -->
+<!-- h-12 ofc to increase the height of the input tag -->
+<!-- my gives a lil margins between the two input tags -->
+<!-- we need border for input tags so : border border-1 border-gray-100 rounded-lg  -->
+<!-- also w-1/4 that is like 25% for the right box  -->
+<!-- now styling the log in button  -->
+<!-- my-for gap between upper tag and below tags -->
+<!-- py- for space of the input tag -->
+<!-- for bold characters : font-bold  -->
+<!-- now for forgotten password we give it some blue and make it text center also cursor-pointer hover:underline  -->
+<!-- margins to space between two tags  -->
+<!-- same button features of log in to create account  -->
+<!-- except w-fit is button size - text- size  -->
+<!-- some padding (for space inside the button) and mx-auto for adjusted margins and to center-->
+<!-- in right box make text-xl for all texts to be big  -->
+<!-- outline-blue-400 gives a blue highlight  -->
+<!-- favicon for the icon of the tab link taken from stackoverflow nd put later -->
+<!-- now make right box relative  -->
+<!-- absolute for the span tag for content below the box, -bottom to push tht content more down or up accordingly  with respect to the right box-->
+
+
